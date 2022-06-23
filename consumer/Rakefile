@@ -23,5 +23,5 @@ desc 'Run the client'
 task :run_client do
   require 'client'
   require 'ap'
-  ap Client.new.process_data
+  ap Client.new.process_data("2013-08-16T15:31:20+10:00")
 end
