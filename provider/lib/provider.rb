@@ -3,9 +3,8 @@ require 'json'
 
 class ProviderData
   @@data_count = 1000
-
-  def self.data_count
-    @@data_count
+  class << self
+    attr_accessor :data_count
   end
 end
 
